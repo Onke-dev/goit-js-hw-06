@@ -1,19 +1,19 @@
 class Storage {
-    #item;
-    constructor(item) {
-        this.#item = item;
+    #items;
+    constructor(items) {
+        this.#items = items;
     }
 
     getItems() {
-        return this.#item;
+        return this.#items;
     }
 
     addItem(newItem) {
-        this.#item.push(newItem);
+        this.#items.push(newItem);
     }
 
     removeItem(itemToRemove) {
-        this.#item = this.#item.filter(item => item !== itemToRemove);
+        this.#items = this.#items.filter(item => item !== itemToRemove);
     }
 }
 
